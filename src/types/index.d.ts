@@ -30,7 +30,7 @@ export type RunQuery = <T>(
 export const runQuery: RunQuery;
 
 export type CloseTestDb = (connection: Connection) => Promise<void>;
-export const clostTestDb: CloseTestDb;
+export const closeTestDb: CloseTestDb;
 
 export type PrepareTestDb = (dbName: string) => Promise<Connection>;
 export const prepareTestDb: PrepareTestDb;
