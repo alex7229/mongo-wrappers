@@ -32,7 +32,7 @@
     "test": "jest  --colors --watch",
     "test:debug": "node --inspect-brk jest --runInBand -c"
   },
-  "types": "dist/types/index.d.ts",
+  "types": "src/types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tup1tsa/mongo-wrappers.git"
