@@ -1,6 +1,6 @@
 {
   "name": "mongo-wrappers",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "dist/index.js",
   "jest": {
@@ -44,8 +44,10 @@
   },
   "homepage": "https://github.com/tup1tsa/mongo-wrappers#readme",
   "dependencies": {
+    "@types/dotenv": "^6.1.0",
     "@types/jest": "^23.3.9",
     "@types/mongodb": "^3.1.14",
+    "dotenv": "^6.1.0",
     "jest": "^23.6.0",
     "mongodb": "^3.1.9",
     "ts-jest": "^23.10.4",
