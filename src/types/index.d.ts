@@ -37,3 +37,6 @@ export const prepareTestDb: PrepareTestDb;
 
 export type GetConnectionInfo = (processEnv: ProcessEnv) => ConnectionInfo;
 export const getConnectionInfo: GetConnectionInfo;
+
+export type RunQueryContainer = <T>(query: Query<T>) => Promise<T>;
+export const runQueryContainer: RunQueryContainer;

@@ -4,3 +4,4 @@ export { runQuery } from "./runQuery";
 export { closeTestDb } from "./testHelpers/closeTestDb";
 export { prepareTestDb } from "./testHelpers/prepareTestDb";
 export { getConnectionInfo } from "./getConnectionInfo";
+export { runQueryContainer } from "./runQueryContainer";
