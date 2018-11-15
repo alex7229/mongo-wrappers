@@ -1,0 +1,54 @@
+{
+  "name": "mongo-wrappers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "jest": {
+    "rootDir": "./",
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.{ts,tsx}"
+    ],
+    "testMatch": [
+      "<rootDir>/src/__tests__/**/*.ts"
+    ],
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|ts|tsx)$"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    }
+  },
+  "scripts": {
+    "test": "jest  --colors --watch",
+    "test:debug": "node --inspect-brk jest --runInBand -c"
+  },
+  "types": "dist/types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tup1tsa/mongo-wrappers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tup1tsa/mongo-wrappers/issues"
+  },
+  "homepage": "https://github.com/tup1tsa/mongo-wrappers#readme",
+  "dependencies": {
+    "@types/jest": "^23.3.9",
+    "@types/mongodb": "^3.1.14",
+    "jest": "^23.6.0",
+    "mongodb": "^3.1.9",
+    "ts-jest": "^23.10.4",
+    "typescript": "^3.1.6"
+  }
+}
